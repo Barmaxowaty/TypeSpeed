@@ -1,3 +1,3 @@
 # TypeSpeed
 
-Link to live application: https://barmaxowaty.github.io/TypeSpeed/
+Application is in build :D
