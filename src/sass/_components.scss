@@ -1,0 +1,50 @@
+.line {
+	background-color: $purple-color;
+	height: 2.6px;
+	width: 100%;
+}
+
+.stats-span-pink {
+	color: $pink-color;
+}
+
+.stats-span-purple {
+	color: $purple-color;
+}
+
+.stats-span {
+	border-bottom: 2px solid;
+}
+
+.button {
+	margin: 2rem;
+	font-size: 4rem;
+	padding: 1.4rem 12rem;
+	width: 15em;
+	border-radius: 20px;
+	border: none;
+	cursor: pointer;
+	transition: background-color 0.3s, opacity 0.1s;
+
+	&:active {
+		opacity: 0.6;
+	}
+
+	&-pink {
+		background-color: $light-pink-color;
+
+		&:hover {
+			background-color: $pink-color;
+			color: #fff;
+		}
+	}
+
+	&-purple {
+		background-color: $light-purple-color;
+
+		&:hover {
+			background-color: $purple-color;
+			color: #fff;
+		}
+	}
+}

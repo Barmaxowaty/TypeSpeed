@@ -1,0 +1,33 @@
+.summary-site {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	display: none;
+
+	&__header {
+		font-size: 5rem;
+		margin: 5rem 0;
+		color: $purple-color;
+	}
+
+	&__speed,
+	&__accuracy {
+		font-size: 4rem;
+	}
+
+	&__speed {
+		&-amount {
+			color: $purple-color;
+			border-bottom: 2px solid $purple-color;
+		}
+	}
+
+	&__accuracy {
+		margin-bottom: 5rem;
+
+		&-amount {
+			color: $pink-color;
+			border-bottom: 2px solid $pink-color;
+		}
+	}
+}

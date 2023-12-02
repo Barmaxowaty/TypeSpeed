@@ -1,0 +1,28 @@
+.starter-site {
+	text-align: center;
+
+	&__header {
+		font-size: 4rem;
+		margin-bottom: 4rem;
+
+		&--purple {
+			color: $purple-color;
+		}
+		&--pink {
+			color: $pink-color;
+		}
+	}
+
+	&__instruction {
+		font-size: 3rem;
+		margin-bottom: 4rem;
+	}
+
+	&__button-wrapper {
+		margin-top: 6em;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}

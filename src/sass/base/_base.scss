@@ -1,0 +1,23 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	box-sizing: border-box;
+	font-family: 'Kurale', sans-serif;
+	padding: 1rem;
+}
+
+.wrapper {
+	max-width: 120rem;
+	width: 100%;
+	margin: 0 auto;
+}

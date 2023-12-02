@@ -1,0 +1,69 @@
+.test-site {
+	display: none;
+	flex-direction: column;
+	overflow: hidden;
+
+	&__header {
+		font-size: 3rem;
+		text-align: center;
+		margin: 2rem 0;
+	}
+
+	&__game-arena {
+		width: 100%;
+		max-height: 60vh;
+		border: 2px solid $dark-grey;
+		background-color: $light-grey;
+		padding: 1.4rem 2rem;
+		margin: auto;
+		overflow: hidden;
+	}
+
+	&__text {
+		font-size: 2.6rem;
+		letter-spacing: 2px;
+	}
+
+	&__actual-stats {
+		margin: 3rem;
+		font-size: 3rem;
+		justify-content: space-around;
+		display: flex;
+		flex-direction: row;
+	}
+}
+
+.correct-letter,
+.incorrect-letter,
+.letter-to-type {
+	border-radius: 6px;
+}
+
+.correct-letter {
+	background-color: rgb(205, 231, 205);
+	color: rgb(1, 105, 1);
+}
+
+.incorrect-letter {
+	background-color: rgb(255, 211, 211);
+	color: rgb(198, 0, 0);
+}
+
+.letter-to-type {
+	animation: pulse 0.7s ease-in-out infinite;
+	color: rgb(65, 65, 65);
+}
+
+@keyframes pulse {
+	0% {
+		background-color: rgba(213, 213, 213, 0);
+	}
+
+	50% {
+		background-color: rgb(225, 225, 225);
+	}
+
+	100% {
+		background-color: rgba(213, 213, 213, 0);
+	}
+}

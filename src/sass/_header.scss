@@ -1,0 +1,11 @@
+.header {
+	font-size: 6rem;
+	text-align: center;
+	color: $pink-color;
+	margin-bottom: 4rem;
+	letter-spacing: 8px;
+
+	&__span {
+		color: $purple-color;
+	}
+}
