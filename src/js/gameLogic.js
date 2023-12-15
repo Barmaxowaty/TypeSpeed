@@ -46,8 +46,7 @@ const generateText = () => {
 	let randomNumber2 = Math.floor(15 * Math.random() + 15)
 	let randomNumber3 = Math.floor((randomSentences.length - 30) * Math.random() + 30)
 
-	// const testTextContent = `${randomSentences[randomNumber1]} ${randomSentences[randomNumber2]} ${randomSentences[randomNumber3]}`
-	const testTextContent = `szczal pies`
+	const testTextContent = `${randomSentences[randomNumber1]} ${randomSentences[randomNumber2]} ${randomSentences[randomNumber3]}`
 
 	// Split game text letters to spans (beacuse it is easier to check wrong/good letter later)
 	testTextContent.split('').forEach(letter => {
