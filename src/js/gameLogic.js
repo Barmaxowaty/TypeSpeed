@@ -47,7 +47,7 @@ const generateText = () => {
 	let randomNumber3 = Math.floor((randomSentences.length - 30) * Math.random() + 30)
 
 	// const testTextContent = `${randomSentences[randomNumber1]} ${randomSentences[randomNumber2]} ${randomSentences[randomNumber3]}`
-	const testTextContent = `jebac szczecin`
+	const testTextContent = `szczal pies`
 
 	// Split game text letters to spans (beacuse it is easier to check wrong/good letter later)
 	testTextContent.split('').forEach(letter => {
@@ -59,6 +59,8 @@ const generateText = () => {
 	allSpans = document.querySelectorAll('.test-site__text p > span')
 	allSpans[0].classList.add('letter-to-type')
 }
+
+generateText()
 
 const startTimer = () => {
 	if (gameMode == 1) {
@@ -110,7 +112,7 @@ const updateStats = () => {
 const startGame = () => {
 	startSite.style.display = 'none'
 	testSite.style.display = 'flex'
-	generateText()
+	// generateText()
 	document.addEventListener('keydown', () => inputField.focus())
 	testText.addEventListener('click', () => inputField.focus())
 }
@@ -160,10 +162,9 @@ const gameLogic = e => {
 			showStats()
 		}
 	}
+
 	updateStats()
 
-	console.log(inputField.value.split('').length)
-	console.log(allLetters.length)
 	if (inputField.value.split('').length == allLetters.length) {
 		endGame()
 	}
@@ -189,12 +190,14 @@ const endGame = () => {
 	summarySiteAccuracy.innerText = Math.round((goodLetter / (goodLetter + wrongLetter)) * 100)
 }
 
-// const resetGame = () => {}
+const goHome = () => {
+	location.reload()
+}
 
 // Listeners to buttons
 btn1minute.addEventListener('click', remainingTimeGameMode)
 btnFullText.addEventListener('click', fullTimeGameMode)
+// Will be added later
+// tryAgainBtn.addEventListener('click', tryAgain)
 inputField.addEventListener('input', gameLogic)
-homeBtn.addEventListener('click', function () {
-	location.reload()
-})
+homeBtn.addEventListener('click', goHome)
