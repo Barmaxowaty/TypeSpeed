@@ -59,6 +59,7 @@ const generateText = () => {
 	allSpans[0].classList.add('letter-to-type')
 }
 
+// Generating text before any function, because it was a problem with efficiency on bad pc while starting game
 generateText()
 
 const startTimer = () => {
